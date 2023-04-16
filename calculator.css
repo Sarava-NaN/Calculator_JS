@@ -1,0 +1,66 @@
+/* Reset CSS to Default */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    color: #fe0932;
+    text-align: center;
+    height:10vh;
+}
+.container{
+    background-color:burlywood;
+    height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: #191a1a; 
+    padding: 20px;
+    border-radius: 10px;
+}
+form input{
+    border:0;
+    outline:0;
+    width: 60px;
+    height: 60px;
+    margin:10px;
+    border-radius: 50%;
+    background: gray;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(255, 234, 3);
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+form input:hover{
+    transform: scale(1.1);
+    background-color: rgba(212, 211, 211, 0.787);
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+form .display input{
+        text-align: right;
+        flex: 1;
+        font-size: 45px;
+        box-shadow: none;
+        /* color: rgb(204, 7, 218); */
+        border-radius: 10px;
+        background-color:rgba(144, 142, 142, 0.717);
+        color: rgb(30, 0, 255);
+}
+form input.Equal{
+    width: 145px;
+    border-radius: 10px;
+}
+form input.operator {
+    color: #02ffd1
+}
